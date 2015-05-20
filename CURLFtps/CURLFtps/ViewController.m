@@ -8,8 +8,8 @@
 
 #import "ViewController.h"
 #define Host @""
-#define USERNAMe @""
-#define PASSWORK @""
+#define USERNAME @""
+#define PASSWORD @""
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIProgressView *progress;
 
@@ -25,7 +25,7 @@
     [self.progress setProgress:0];
     NSString * path=[[NSBundle mainBundle] pathForResource:@"iosTest" ofType:@"flv"];
     NSLog(@"%@",path);
-    [service addFtpServiceWithURL:@"ftp://218.246.96.131:23/iosTest.flv" andUserName:@"HYY22" andPassWord:@"123456" andLocalPath:path];
+    [service addFtpServiceWithURL:Host andUserName:USERNAME andPassWord:PASSWORD andLocalPath:path];
    
     // Do any additional setup after loading the view, typically from a nib.
 }
