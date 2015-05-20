@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAC41CFB1B097AF500BDE567 /* FtpUploading.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC41CFA1B097AF500BDE567 /* FtpUploading.m */; };
+		EAE37F281B071E6900299019 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE37F271B071E6900299019 /* main.m */; };
+		EAE37F2B1B071E6900299019 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE37F2A1B071E6900299019 /* AppDelegate.m */; };
+		EAE37F2E1B071E6900299019 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE37F2D1B071E6900299019 /* ViewController.m */; };
+		EAE37F311B071E6900299019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE37F2F1B071E6900299019 /* Main.storyboard */; };
+		EAE37F331B071E6900299019 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE37F321B071E6900299019 /* Images.xcassets */; };
+		EAE37F361B071E6900299019 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAE37F341B071E6900299019 /* LaunchScreen.xib */; };
+		EAE37F421B071E6900299019 /* CURLFtpsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE37F411B071E6900299019 /* CURLFtpsTests.m */; };
+		EAE37F4D1B071E9100299019 /* FtpServices.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE37F4C1B071E9100299019 /* FtpServices.m */; };
+		EAE37F5A1B071FF600299019 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE37F591B071FF600299019 /* libcurl.a */; };
+		EAE37F5D1B07258600299019 /* FtpBean.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE37F5C1B07258600299019 /* FtpBean.m */; };
+		EAE37F5F1B072CD400299019 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE37F5E1B072CD400299019 /* UIKit.framework */; };
+		EAE37F611B072CE700299019 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE37F601B072CE700299019 /* Foundation.framework */; };
+		EAE37F631B072CF200299019 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE37F621B072CF200299019 /* CoreGraphics.framework */; };
+		EAE37F651B072CF900299019 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE37F641B072CF900299019 /* CFNetwork.framework */; };
+		EAE37F671B072D0500299019 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE37F661B072D0500299019 /* Security.framework */; };
+		EAE37F691B072D0D00299019 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE37F681B072D0D00299019 /* libz.dylib */; };
+		EAE37F6B1B072E3100299019 /* picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAE37F6A1B072E3100299019 /* picture.jpg */; };
+		EAE37F6F1B073E0300299019 /* iosTest.flv in Resources */ = {isa = PBXBuildFile; fileRef = EAE37F6E1B073E0300299019 /* iosTest.flv */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAE37F3C1B071E6900299019 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAE37F1A1B071E6900299019 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAE37F211B071E6900299019;
+			remoteInfo = CURLFtps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EAC41CF91B097AF500BDE567 /* FtpUploading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FtpUploading.h; sourceTree = "<group>"; };
+		EAC41CFA1B097AF500BDE567 /* FtpUploading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FtpUploading.m; sourceTree = "<group>"; };
+		EAE37F221B071E6900299019 /* CURLFtps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CURLFtps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE37F261B071E6900299019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE37F271B071E6900299019 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAE37F291B071E6900299019 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EAE37F2A1B071E6900299019 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EAE37F2C1B071E6900299019 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EAE37F2D1B071E6900299019 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EAE37F301B071E6900299019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAE37F321B071E6900299019 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EAE37F351B071E6900299019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EAE37F3B1B071E6900299019 /* CURLFtpsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CURLFtpsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE37F401B071E6900299019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE37F411B071E6900299019 /* CURLFtpsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CURLFtpsTests.m; sourceTree = "<group>"; };
+		EAE37F4B1B071E9100299019 /* FtpServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FtpServices.h; sourceTree = "<group>"; };
+		EAE37F4C1B071E9100299019 /* FtpServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FtpServices.m; sourceTree = "<group>"; };
+		EAE37F501B071FF600299019 /* curl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl.h; sourceTree = "<group>"; };
+		EAE37F511B071FF600299019 /* curlbuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlbuild.h; sourceTree = "<group>"; };
+		EAE37F521B071FF600299019 /* curlrules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlrules.h; sourceTree = "<group>"; };
+		EAE37F531B071FF600299019 /* curlver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlver.h; sourceTree = "<group>"; };
+		EAE37F541B071FF600299019 /* easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easy.h; sourceTree = "<group>"; };
+		EAE37F551B071FF600299019 /* mprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mprintf.h; sourceTree = "<group>"; };
+		EAE37F561B071FF600299019 /* multi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multi.h; sourceTree = "<group>"; };
+		EAE37F571B071FF600299019 /* stdcheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdcheaders.h; sourceTree = "<group>"; };
+		EAE37F581B071FF600299019 /* typecheck-gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "typecheck-gcc.h"; sourceTree = "<group>"; };
+		EAE37F591B071FF600299019 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
+		EAE37F5B1B07258600299019 /* FtpBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FtpBean.h; sourceTree = "<group>"; };
+		EAE37F5C1B07258600299019 /* FtpBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FtpBean.m; sourceTree = "<group>"; };
+		EAE37F5E1B072CD400299019 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EAE37F601B072CE700299019 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EAE37F621B072CF200299019 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EAE37F641B072CF900299019 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EAE37F661B072D0500299019 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EAE37F681B072D0D00299019 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		EAE37F6A1B072E3100299019 /* picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = picture.jpg; sourceTree = "<group>"; };
+		EAE37F6E1B073E0300299019 /* iosTest.flv */ = {isa = PBXFileReference; lastKnownFileType = file; path = iosTest.flv; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAE37F1F1B071E6900299019 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE37F691B072D0D00299019 /* libz.dylib in Frameworks */,
+				EAE37F671B072D0500299019 /* Security.framework in Frameworks */,
+				EAE37F651B072CF900299019 /* CFNetwork.framework in Frameworks */,
+				EAE37F631B072CF200299019 /* CoreGraphics.framework in Frameworks */,
+				EAE37F611B072CE700299019 /* Foundation.framework in Frameworks */,
+				EAE37F5F1B072CD400299019 /* UIKit.framework in Frameworks */,
+				EAE37F5A1B071FF600299019 /* libcurl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE37F381B071E6900299019 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAE37F191B071E6900299019 = {
+			isa = PBXGroup;
+			children = (
+				EAE37F241B071E6900299019 /* CURLFtps */,
+				EAE37F3E1B071E6900299019 /* CURLFtpsTests */,
+				EAE37F231B071E6900299019 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAE37F231B071E6900299019 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAE37F221B071E6900299019 /* CURLFtps.app */,
+				EAE37F3B1B071E6900299019 /* CURLFtpsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAE37F241B071E6900299019 /* CURLFtps */ = {
+			isa = PBXGroup;
+			children = (
+				EAE37F4E1B071FF600299019 /* libCurl */,
+				EAE37F6A1B072E3100299019 /* picture.jpg */,
+				EAE37F291B071E6900299019 /* AppDelegate.h */,
+				EAE37F2A1B071E6900299019 /* AppDelegate.m */,
+				EAE37F2C1B071E6900299019 /* ViewController.h */,
+				EAE37F2D1B071E6900299019 /* ViewController.m */,
+				EAE37F2F1B071E6900299019 /* Main.storyboard */,
+				EAE37F321B071E6900299019 /* Images.xcassets */,
+				EAE37F341B071E6900299019 /* LaunchScreen.xib */,
+				EAE37F251B071E6900299019 /* Supporting Files */,
+				EAE37F4B1B071E9100299019 /* FtpServices.h */,
+				EAE37F4C1B071E9100299019 /* FtpServices.m */,
+				EAE37F5B1B07258600299019 /* FtpBean.h */,
+				EAE37F5C1B07258600299019 /* FtpBean.m */,
+				EAE37F6E1B073E0300299019 /* iosTest.flv */,
+				EAC41CF91B097AF500BDE567 /* FtpUploading.h */,
+				EAC41CFA1B097AF500BDE567 /* FtpUploading.m */,
+				EAF6F0D61B0C6766004AA924 /* framwork */,
+			);
+			path = CURLFtps;
+			sourceTree = "<group>";
+		};
+		EAE37F251B071E6900299019 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAE37F261B071E6900299019 /* Info.plist */,
+				EAE37F271B071E6900299019 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAE37F3E1B071E6900299019 /* CURLFtpsTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAE37F411B071E6900299019 /* CURLFtpsTests.m */,
+				EAE37F3F1B071E6900299019 /* Supporting Files */,
+			);
+			path = CURLFtpsTests;
+			sourceTree = "<group>";
+		};
+		EAE37F3F1B071E6900299019 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAE37F401B071E6900299019 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAE37F4E1B071FF600299019 /* libCurl */ = {
+			isa = PBXGroup;
+			children = (
+				EAE37F4F1B071FF600299019 /* curl */,
+				EAE37F591B071FF600299019 /* libcurl.a */,
+			);
+			path = libCurl;
+			sourceTree = "<group>";
+		};
+		EAE37F4F1B071FF600299019 /* curl */ = {
+			isa = PBXGroup;
+			children = (
+				EAE37F501B071FF600299019 /* curl.h */,
+				EAE37F511B071FF600299019 /* curlbuild.h */,
+				EAE37F521B071FF600299019 /* curlrules.h */,
+				EAE37F531B071FF600299019 /* curlver.h */,
+				EAE37F541B071FF600299019 /* easy.h */,
+				EAE37F551B071FF600299019 /* mprintf.h */,
+				EAE37F561B071FF600299019 /* multi.h */,
+				EAE37F571B071FF600299019 /* stdcheaders.h */,
+				EAE37F581B071FF600299019 /* typecheck-gcc.h */,
+			);
+			path = curl;
+			sourceTree = "<group>";
+		};
+		EAF6F0D61B0C6766004AA924 /* framwork */ = {
+			isa = PBXGroup;
+			children = (
+				EAE37F681B072D0D00299019 /* libz.dylib */,
+				EAE37F661B072D0500299019 /* Security.framework */,
+				EAE37F641B072CF900299019 /* CFNetwork.framework */,
+				EAE37F621B072CF200299019 /* CoreGraphics.framework */,
+				EAE37F601B072CE700299019 /* Foundation.framework */,
+				EAE37F5E1B072CD400299019 /* UIKit.framework */,
+			);
+			name = framwork;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAE37F211B071E6900299019 /* CURLFtps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE37F451B071E6900299019 /* Build configuration list for PBXNativeTarget "CURLFtps" */;
+			buildPhases = (
+				EAE37F1E1B071E6900299019 /* Sources */,
+				EAE37F1F1B071E6900299019 /* Frameworks */,
+				EAE37F201B071E6900299019 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CURLFtps;
+			productName = CURLFtps;
+			productReference = EAE37F221B071E6900299019 /* CURLFtps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAE37F3A1B071E6900299019 /* CURLFtpsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE37F481B071E6900299019 /* Build configuration list for PBXNativeTarget "CURLFtpsTests" */;
+			buildPhases = (
+				EAE37F371B071E6900299019 /* Sources */,
+				EAE37F381B071E6900299019 /* Frameworks */,
+				EAE37F391B071E6900299019 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAE37F3D1B071E6900299019 /* PBXTargetDependency */,
+			);
+			name = CURLFtpsTests;
+			productName = CURLFtpsTests;
+			productReference = EAE37F3B1B071E6900299019 /* CURLFtpsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAE37F1A1B071E6900299019 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = WX;
+				TargetAttributes = {
+					EAE37F211B071E6900299019 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					EAE37F3A1B071E6900299019 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = EAE37F211B071E6900299019;
+					};
+				};
+			};
+			buildConfigurationList = EAE37F1D1B071E6900299019 /* Build configuration list for PBXProject "CURLFtps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAE37F191B071E6900299019;
+			productRefGroup = EAE37F231B071E6900299019 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAE37F211B071E6900299019 /* CURLFtps */,
+				EAE37F3A1B071E6900299019 /* CURLFtpsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAE37F201B071E6900299019 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE37F311B071E6900299019 /* Main.storyboard in Resources */,
+				EAE37F361B071E6900299019 /* LaunchScreen.xib in Resources */,
+				EAE37F331B071E6900299019 /* Images.xcassets in Resources */,
+				EAE37F6F1B073E0300299019 /* iosTest.flv in Resources */,
+				EAE37F6B1B072E3100299019 /* picture.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE37F391B071E6900299019 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAE37F1E1B071E6900299019 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE37F2E1B071E6900299019 /* ViewController.m in Sources */,
+				EAE37F2B1B071E6900299019 /* AppDelegate.m in Sources */,
+				EAC41CFB1B097AF500BDE567 /* FtpUploading.m in Sources */,
+				EAE37F4D1B071E9100299019 /* FtpServices.m in Sources */,
+				EAE37F281B071E6900299019 /* main.m in Sources */,
+				EAE37F5D1B07258600299019 /* FtpBean.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE37F371B071E6900299019 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE37F421B071E6900299019 /* CURLFtpsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAE37F3D1B071E6900299019 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAE37F211B071E6900299019 /* CURLFtps */;
+			targetProxy = EAE37F3C1B071E6900299019 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAE37F2F1B071E6900299019 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAE37F301B071E6900299019 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAE37F341B071E6900299019 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAE37F351B071E6900299019 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAE37F431B071E6900299019 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EAE37F441B071E6900299019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAE37F461B071E6900299019 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CURLFtps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CURLFtps/libCurl",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EAE37F471B071E6900299019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CURLFtps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CURLFtps/libCurl",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EAE37F491B071E6900299019 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CURLFtpsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CURLFtps.app/CURLFtps";
+			};
+			name = Debug;
+		};
+		EAE37F4A1B071E6900299019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CURLFtpsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CURLFtps.app/CURLFtps";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAE37F1D1B071E6900299019 /* Build configuration list for PBXProject "CURLFtps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE37F431B071E6900299019 /* Debug */,
+				EAE37F441B071E6900299019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAE37F451B071E6900299019 /* Build configuration list for PBXNativeTarget "CURLFtps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE37F461B071E6900299019 /* Debug */,
+				EAE37F471B071E6900299019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAE37F481B071E6900299019 /* Build configuration list for PBXNativeTarget "CURLFtpsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE37F491B071E6900299019 /* Debug */,
+				EAE37F4A1B071E6900299019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAE37F1A1B071E6900299019 /* Project object */;
+}
